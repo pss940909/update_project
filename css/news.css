@@ -1,0 +1,79 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/hotel-wallpaper.png);
+  height: 300px;
+}
+
+.mask {
+  background-color: black;
+  opacity: 0.4;
+  height: 300px;
+  width: 30%;
+  position: relative;
+}
+.mask h2 {
+  opacity: 1;
+  color: white;
+  font-size: 85px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.grid {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.grid-item {
+  width: 30%;
+  border: 1px solid #ccc;
+  margin: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+.grid-item:hover {
+  box-shadow: 1px 1px #dcdcdc;
+  transform: translate(3px, 3px);
+  transition: all 0.5s ease-in-out;
+}
+.add_to_fav {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.card-content {
+  padding: 15px;
+}
+.card-content .date {
+  font-size: 14px;
+  font-family: Dancing Script;
+}
+.card-content h3 {
+  font-family: Dancing Script;
+  font-size: 25px;
+}
+
+.contact_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,193 @@
+/* -----------------header----------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+h1 a img {
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  font-family: Barlow;
+  font-size: 16px;
+  /* outline: 1px solid tomato; */
+}
+.menu li {
+  padding: 0 20px;
+  /* outline: 1px solid red; */
+  width: auto;
+  flex-grow: 1;
+  /* transition: all 0.5s; */
+}
+.menu li:hover {
+  background-color: #5b5353;
+}
+
+.menu a {
+  display: block;
+  line-height: 120px;
+  font-weight: 500;
+  /* transition: all 0.5s; */
+}
+.menu a:hover {
+  color: #aea7a7;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #f8f8f8;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.6s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* ------側邊購物車清單---- */
+
+.shoppingCart-sideTable {
+  margin: 0 15px;
+  padding: 60px;
+  border-collapse: collapse;
+  font-size: 16px;
+  position: relative;
+}
+
+.shoppingCart-sideTable th,
+.shoppingCart-sideTable td {
+  padding: 6px;
+  vertical-align: middle;
+  /* outline: 3px solid green; */
+}
+
+.shoppingCart-sideTable th {
+  text-align: left;
+}
+
+.shoppingCart-sideTable tr:last-child {
+  border-bottom: 0;
+  /* 消除border重複的地方 */
+}
+.shoppingCart-sideTable .cartRenderArea tr {
+  border-bottom: 1px solid #b9b9b9;
+}
+
+@media (max-width: 767px) {
+  .shoppingCart-sideTable {
+    width: 300px;
+  }
+}
+
+.cartItem-title {
+  display: flex;
+  align-items: center;
+}
+
+.cartItem-title img {
+  margin-right: 15px;
+  max-width: 80px;
+}
+
+.discardBtn_side {
+  text-align: center;
+}
+
+.qty_ctrl {
+  display: flex;
+
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+.qty_ctrl a {
+  border: 1px solid #5b5353;
+  display: block;
+  padding: 10px;
+}
+.qty_ctrl a:nth-child(2) {
+  border-right: 0;
+  border-left: 0;
+}
+
+.cart_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.overflowWrap {
+  position: relative;
+}
+
+a.checkout_btn_side {
+  display: block;
+  border-radius: 2px;
+  width: 500px;
+  background-color: #5b5353;
+  color: white;
+  line-height: 35px;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+  right: 50px;
+  transition: 0.6s;
+}
+.deleteBtn {
+  cursor: pointer;
+}
+.product_name {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.product_price {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}

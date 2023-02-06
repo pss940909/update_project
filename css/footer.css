@@ -1,0 +1,90 @@
+/* --------------Contact Us----------------- */
+.contact_us {
+  background-image: url(../img/contactus_bg.jpg);
+  /* background-color: #fff; */
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.contact_us h2 {
+  text-align: left;
+}
+.contact_us_content {
+  display: flex;
+  justify-content: space-between;
+}
+.left-info {
+  /* outline: 1px solid red; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.left-info p {
+  font-family: Roboto Condensed;
+  line-height: 3;
+  font-size: 20px;
+  font-weight: 300;
+}
+.left-info p:first-child {
+  line-height: 1.6;
+}
+
+.social_media_link a {
+  font-size: 32px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.social_media_link a:hover {
+  color: #aea7a7;
+}
+.right-form {
+  /* outline: 1px solid blue; */
+  width: 50%;
+}
+.right-form label {
+  font-size: 20px;
+}
+.right-form input {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  text-indent: 1rem;
+}
+.right-form textarea {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  text-indent: 1rem;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+.right-form .submit_btn {
+  margin-top: 20px;
+  width: 200px;
+  font-size: 18px;
+  background-color: #5b5353;
+  color: #fff;
+  border-radius: 2px;
+  text-indent: 0;
+  border: 0;
+  line-height: 50px;
+  padding: 0;
+}
+.right-form .submit_btn:hover {
+  background-color: #dcdcdc;
+  color: #5b5353;
+}
+/* --------------footer----------------- */
+footer {
+  line-height: 80px;
+  background-color: #ccc;
+  color: #5b5353;
+  text-align: center;
+}

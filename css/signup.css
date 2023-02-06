@@ -1,0 +1,94 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+.out {
+  background-color: #dcdcdc;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form_text {
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 120px;
+}
+.signup_form {
+  width: 400px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.signin_list {
+  width: 300px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+.signin_list li {
+  padding-top: 5px;
+}
+.signin_list label {
+  font-size: 18px;
+}
+.signin_list input {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.name input {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.first_name {
+  margin-right: 10px;
+}
+
+.signin_btn {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 2px;
+  background-color: #5b5353;
+  color: #fff;
+}
+.no_account {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+.no_account a {
+  text-decoration: underline;
+}
+.form_img {
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/signup.png);
+}

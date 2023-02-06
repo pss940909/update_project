@@ -1,0 +1,20 @@
+/* ----------------------banner -------------------*/
+.banner {
+  background-image: url(../img/banner_bg.jpg);
+  height: 300px;
+}
+.mask {
+  background-color: black;
+  opacity: 0.2;
+  height: 300px;
+  width: 30%;
+  position: relative;
+}
+.mask h2 {
+  opacity: 1;
+  color: white;
+  font-size: 85px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}

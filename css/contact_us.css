@@ -1,0 +1,25 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+.banner {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/criss-cross.png);
+  height: 300px;
+  background-repeat: repeat;
+}
+.content {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+  margin: 64px auto;
+}
+.content h3 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.content p {
+  font-style: italic;
+}

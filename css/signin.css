@@ -1,0 +1,102 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+input:focus {
+  outline: 1px solid #5b5353;
+}
+.out {
+  background-color: #dcdcdc;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form_text {
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 120px;
+}
+.signin_form {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+}
+.signin_list {
+  width: 300px;
+  padding-top: 72px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.signin_list li {
+  padding-top: 5px;
+}
+.signin_list label {
+  font-size: 18px;
+}
+.signin_list input {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+}
+
+.signin_btn {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 2px;
+  background-color: #5b5353;
+  color: #fff;
+}
+.signin_btn:hover {
+  background-color: #dcdcdc;
+  color: #5b5353;
+  transition: all 0.3s;
+}
+.no_pw {
+  display: block;
+  font-size: 16px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+.no_pw:hover {
+  color: #ccc;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.no_account {
+  font-size: 18px;
+  text-align: center;
+}
+
+.no_account a:hover {
+  color: #ccc;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.form_img {
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/signin.png);
+}

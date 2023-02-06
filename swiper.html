@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Office Interior Design Co.</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;1,400&family=Dancing+Script&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!---------------- Swiper ---------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!----------- AOS  ----------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!----------- my CSS  ----------->
+    <link rel="stylesheet" href="css/index copy.css" />
+  </head>
+  <body>
+    <!------------------- header ------------------->
+
+    <div class="banner">
+      <!---------------- Swiper html 模板 ---------------->
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- header -->
+        <header class="container">
+          <!-------------------- 左側選單 -------------------->
+          <div class="logo">
+            <!--------------------- logo --------------------->
+            <h1>
+              <a href="index.html"><img src="img/white_logo.png" alt="" /></a>
+            </h1>
+          </div>
+
+          <!------------------- 右側icon --------------------->
+          <div class="menu">
+            <!--------------------- 導覽列 --------------------->
+            <ul>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="shop.html">SHOP</a></li>
+              <li><a href="contactus.html">CONSULT</a></li>
+              <li>
+                <a href="#" onclick="openNav()"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+              <li>
+                <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide1">
+            <img
+              src="https://images.unsplash.com/photo-1601628828688-632f38a5a7d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aW50ZXJpb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide2">
+            <img
+              src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGludGVyaW9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide3">
+            <img
+              src="https://images.unsplash.com/photo-1601628828688-632f38a5a7d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aW50ZXJpb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60 "
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+
+    <!-- 購物車側邊選單 -->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overflowWrap">
+        <table class="shoppingCart-sideTable">
+          <tr>
+            <th width="10%" class="cart_title">Order Summary</th>
+            <th width="5%"></th>
+            <th width="8%"></th>
+            <th width="5%"></th>
+            <th width="5%"></th>
+          </tr>
+          <tbody class="cartRenderArea">
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+          </tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>Subtotal</p>
+            </td>
+            <td class="subtotal">NT$24,000</td>
+          </tr>
+        </table>
+        <a href="cart.html" class="checkout_btn_side">Check Out</a>
+      </div>
+    </div>
+
+    <!-----------AOS----->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!------------My JS----->
+    <script src="js/addToCart.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

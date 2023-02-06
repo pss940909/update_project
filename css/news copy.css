@@ -1,0 +1,151 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/hotel-wallpaper.png);
+  height: 300px;
+}
+
+.mask {
+  background-color: black;
+  opacity: 0.4;
+  height: 300px;
+  width: 30%;
+  position: relative;
+}
+.mask h2 {
+  opacity: 1;
+  color: white;
+  font-size: 85px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.grid {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.grid-item {
+  width: 30%;
+  border: 1px solid #ccc;
+  margin: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+.add_to_fav {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  display: block;
+}
+.card-content {
+  padding: 15px;
+}
+.card-content .date {
+  font-size: 14px;
+  font-family: Dancing Script;
+}
+.card-content h3 {
+  font-family: Dancing Script;
+  font-size: 25px;
+}
+
+.contact_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------------news_content------ */
+.news_content {
+  display: flex;
+}
+.bgimg {
+  width: 40%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.bgimg img {
+  object-fit: cover;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.news_text {
+  width: 60%;
+  box-sizing: border-box;
+  padding-left: 45px;
+  padding-bottom: 100px;
+  font-family: serif;
+  background-color: #f8f8f8;
+}
+
+.news_title {
+  font-size: 56px;
+  font-style: italic;
+  font-family: Dancing Script;
+  padding-top: 120px;
+}
+.news_date {
+  font-size: 18px;
+  font-style: italic;
+  font-family: Dancing Script;
+  padding-bottom: 64px;
+  color: #ccc;
+}
+.news_date span {
+  margin-right: 20px;
+}
+.news_para {
+  font-size: 24px;
+  line-height: 2;
+  text-indent: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.news_text ul {
+  padding: 40px;
+}
+.news_text ul li {
+  font-size: 24px;
+  line-height: 2;
+  list-style: disc;
+  color: black;
+}
+.para_list img {
+  width: 200px;
+}
+img {
+  width: 300px;
+  float: right;
+  margin-left: 20px;
+}
+
+.quote {
+  font-size: 21px;
+  font-style: italic;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  line-height: 1.5;
+  color: #ccc;
+  font-weight: bolder;
+  text-indent: 20px;
+}
